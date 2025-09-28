@@ -1,39 +1,91 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ## DEPENDENCIES
+# -----------------------------------------------------------------------------
 node_modules/
 
+
+# ## BUILD & CACHE FOLDERS
+# -----------------------------------------------------------------------------
 # Expo
 .expo/
 dist/
 web-build/
-expo-env.d.ts
 
 # Native
+build/
 .kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+buck-out/
+\.buckd/
 
 # Metro
 .metro-health-check*
 
-# debug
+# TypeScript
+*.tsbuildinfo
+
+
+# ## LOGS & DEBUG FILES
+# -----------------------------------------------------------------------------
+/logs
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
 
-# local env files
+# ## SENSITIVE & ENVIRONMENT FILES (DO NOT COMMIT THESE)
+# -----------------------------------------------------------------------------
+# Local env files
+.env
 .env*.local
 
-# typescript
-*.tsbuildinfo
+# Native credentials & keys
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+*.keystore
+!debug.keystore
+local.properties
 
+
+# ## OS & IDE SPECIFIC
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+
+# IDEs (Android Studio, IntelliJ, Xcode)
+.idea/
+.gradle/
+*.iml
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.xcuserstate
+
+
+# ## MISCELLANEOUS
+# -----------------------------------------------------------------------------
+# Auto-generated files
+expo-env.d.ts
+*.orig.*
+
+# Compiled binaries
+*.ipa
+*.apk
+*.ap_
+*.aab
+
+# Custom project-specific ignores
 app-example

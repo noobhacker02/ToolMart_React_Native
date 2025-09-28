@@ -3,14 +3,10 @@ import { StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedView } from '@/components/ThemedView';
 import Header from '@/components/Header';
-import LandingPage_Home from '@/components/LandingPage_Home';
-import ProductListing_HomePage from '@/components/ProductListing_HomePage';
+import CompareSearch from '@/components/CompareSearch';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import RecommendedProducts from '@/components/RecommendedProducts';
-import TopPicks from '@/components/TopPicks';
 
-
-export default function HomeScreen() {
+export default function CompareScreen() {
   const colorScheme = useColorScheme();
 
   return (
@@ -22,7 +18,7 @@ export default function HomeScreen() {
           theme={colorScheme ?? 'light'} 
           onMenuPress={() => console.log('menu pressed')}
           onLocationPress={() => console.log('location pressed')}
-          onSearch={(q) => console.log('search:', q)} 
+          onSearch={(q) => console.log('compare search:', q)}
           onAccountPress={() => console.log('account pressed')}
           onReturnsPress={() => console.log('returns pressed')}
           onCartPress={() => console.log('go to cart')} 
@@ -31,12 +27,7 @@ export default function HomeScreen() {
           contentContainerStyle={styles.scrollContent} 
           showsVerticalScrollIndicator={false}
         >
-          <LandingPage_Home />
-          <TopPicks />
-          <ProductListing_HomePage />
-          
-          <RecommendedProducts />
-          <TopPicks />
+          <CompareSearch />
         </ScrollView>
       </ThemedView>
     </SafeAreaView>
