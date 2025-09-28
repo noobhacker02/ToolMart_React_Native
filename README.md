@@ -1,50 +1,117 @@
-# Welcome to your Expo app 👋
+# 🛠️ ToolCart - A React Native E-commerce App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to ToolCart, a mobile e-commerce application built with React Native, designed for browsing, comparing, and purchasing tools. Inspired by platforms like Amazon, it provides a seamless shopping experience with a special focus on detailed product comparison.
 
-## Get started
+<p align="center">
+  <img alt="App Demo" src="https_your_link_to_a_cool_demo_gif_here.gif" width="300"/>
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+-   **🛍️ Dynamic Home Screen:** Browse a rich catalog of tools with search and filter capabilities.
+-   **⚖️ Advanced Comparison Engine:**
+    -   **Table View:** Compare tools side-by-side with a detailed technical specifications table.
+    -   **Visual View:** Place product images next to each other for a clear visual comparison.
+-   **🛒 Functional Shopping Cart:** Add, remove, and manage items in your cart before checkout.
+-   **👤 User Profile:** Manage your account details, view order history, and set preferences.
+-   **🌗 Light & Dark Mode:** Seamlessly switch between themes for comfortable viewing in any lighting condition, with user preferences saved locally.
+-   **📱 Fully Responsive:** Built to look and feel great on a wide range of iOS and Android devices.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📸 Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 Tech Stack
 
-```bash
-npm run reset-project
+-   **Framework:** React Native
+-   **Development Environment:** Expo
+-   **Navigation:** React Navigation
+-   **State Management:** [React Context API / Redux]
+-   **Styling:** React Native Stylesheet / [Styled Components]
+-   **Icons:** Expo Vector Icons
+
+---
+
+## ⚙️ Getting Started
+
+Follow these instructions to get the project up and running on your local machine for development and testing.
+
+### Prerequisites
+
+-   [Node.js](https://nodejs.org/) (LTS version recommended)
+-   [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+-   [Expo Go](https://expo.dev/client) app on your physical device or an emulator/simulator.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repo-name
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or if you use yarn
+    # yarn install
+    ```
+
+4.  **Start the development server:**
+    ```bash
+    npx expo start
+    ```
+
+5.  **Run the app:**
+    -   Scan the QR code with the Expo Go app on your phone.
+    -   Or, press `i` to run on an iOS Simulator or `a` to run on an Android Emulator.
+
+---
+
+## 📂 Project Structure
+
+The project follows a standard React Native component-based structure:
+
+
+
+ToolCart/<br>
+├── assets/         \# Images, fonts, and other static files<br>
+├── src/<br>
+│   ├── components/ \# Reusable components (Button, Card, etc.)<br>
+│   ├── screens/    \# Main screens of the app (Home, Cart, Profile, Compare)<br>
+│   ├── navigation/ \# Navigation logic (Stack and Tab navigators)<br>
+│   ├── constants/  \# Colors, styles, and other constants<br>
+│   ├── context/    \# State management (e.g., ThemeContext, CartContext)<br>
+│   └── hooks/      \# Custom hooks<br>
+├── App.js          \# The root component of the application<br>
+└── package.json    \# Project dependencies and scripts<br>
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions for improving the app, please feel free to open an issue or submit a pull request.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
