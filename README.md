@@ -21,9 +21,14 @@ Welcome to ToolCart, a mobile e-commerce application built with React Native, de
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots/video's
 
-
+<img width="389" height="793" alt="image" src="https://github.com/user-attachments/assets/68d6e3d5-2914-4844-9782-a557d423435d" />
+<img width="385" height="793" alt="image" src="https://github.com/user-attachments/assets/901350df-a1b3-4e99-ac64-f03f6bc22d4d" />
+<img width="384" height="789" alt="image" src="https://github.com/user-attachments/assets/95e6d8d7-c061-45d6-a9a0-46da8549147b" />
+<img width="389" height="793" alt="image" src="https://github.com/user-attachments/assets/c9ca2b80-05f3-426d-83b0-0ec57d451321" />
+<img width="388" height="791" alt="image" src="https://github.com/user-attachments/assets/a3aed4da-113f-4148-8b3f-f22beaad7007" />
+  
 
 ---
 
